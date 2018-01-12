@@ -4,21 +4,18 @@
 #number, detect their mistake using try and except and print an error message
 #and skip to the next number.
 
-def reader():
-    status = True
-    total = 0
-    while status:
-        user_input = input('Enter a number:')
-        if user_input.lower() == 'done':
-            return total
-            status = False
-        try:
-            user_number = float(user_input)
-        except:
-            print('Error, please enter a number or done')
-            continue
-
-        total += user_number
-    return(total)
-
-print("Total:",reader())
+count = 0
+total = 0.0
+while True :
+    user_input = input('Enter a number: ')
+    if user_input.lower() == 'done':
+        break
+    try:
+        user_number = float(user_input)
+    except:
+        print('Error, please enter a number or done')
+        continue
+    count += 1
+    total += user_number
+print('All Done')
+print(total, count, total/count)
