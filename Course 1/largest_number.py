@@ -1,7 +1,7 @@
 # largest number in a list
 
 def largest(list):
-    largest = 0
+    largest = None
     for i in list:
         if i > largest:
             largest = i
