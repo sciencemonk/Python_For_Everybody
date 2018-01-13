@@ -4,8 +4,8 @@
 
 # Use words.txt as the file name
 
-fname = input('Enter file name:')
-fh = open(fname,'r')
+file_name = input('Enter a file name:')
+file_handler = open(file_name, 'r')
 
-for i in fh:
+for i in file_handler:
     print(i.upper().rstrip())
