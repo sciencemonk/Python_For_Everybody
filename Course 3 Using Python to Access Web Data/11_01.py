@@ -1,4 +1,4 @@
-# Read file, extract all numbers and compute sum
+# Read file, extract all integers and compute sum
 import re
 
 file_name = input('Enter file name:')
